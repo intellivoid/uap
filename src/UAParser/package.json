@@ -1,0 +1,136 @@
+{
+    "package": {
+        "package_name": "net.intellivoid.uap",
+        "name": "UAParser",
+        "version": "1.0.0.0",
+        "author": "Zi Xing Narrakas",
+        "organization": "Intellivoid",
+        "description": "Parses the user agent string",
+        "url": "https://github.com/intellivoid/uap",
+        "dependencies": [
+            {
+                "package": "com.symfony.filesystem",
+                "version": "latest",
+                "source": "symfony@composer/filesystem",
+                "required": true
+            },
+            {
+                "package": "com.symfony.yaml",
+                "version": "latest",
+                "source": "symfony@composer/yaml",
+                "required": true
+            }
+        ],
+        "configuration": {
+            "autoload_method": "generated_spl",
+            "main": null,
+            "post_installation": [],
+            "pre_installation": []
+        }
+    },
+    "components": [
+        {
+            "required": true,
+            "file": "AbstractParser.php"
+        },
+        {
+            "required": true,
+            "file": "OperatingSystemParser.php"
+        },
+        {
+            "required": true,
+            "file": "Exception/ReaderException.php"
+        },
+        {
+            "required": true,
+            "file": "Exception/FetcherException.php"
+        },
+        {
+            "required": true,
+            "file": "Exception/FileNotFoundException.php"
+        },
+        {
+            "required": true,
+            "file": "Exception/InvalidArgumentException.php"
+        },
+        {
+            "required": true,
+            "file": "Exception/DomainException.php"
+        },
+        {
+            "required": true,
+            "file": "DeviceParser.php"
+        },
+        {
+            "required": true,
+            "file": "UserAgentParser.php"
+        },
+        {
+            "required": true,
+            "file": "Util/Logfile/ApacheCommonLogFormatReader.php"
+        },
+        {
+            "required": true,
+            "file": "Util/Logfile/AbstractReader.php"
+        },
+        {
+            "required": true,
+            "file": "Util/Logfile/ReaderInterface.php"
+        },
+        {
+            "required": true,
+            "file": "Util/Converter.php"
+        },
+        {
+            "required": true,
+            "file": "Util/CodeGenerator.php"
+        },
+        {
+            "required": true,
+            "file": "Util/Fetcher.php"
+        },
+        {
+            "required": true,
+            "file": "ParserFactoryMethods.php"
+        },
+        {
+            "required": true,
+            "file": "Result/Client.php"
+        },
+        {
+            "required": true,
+            "file": "Result/AbstractSoftware.php"
+        },
+        {
+            "required": true,
+            "file": "Result/Device.php"
+        },
+        {
+            "required": true,
+            "file": "Result/AbstractVersionedSoftware.php"
+        },
+        {
+            "required": true,
+            "file": "Result/AbstractClient.php"
+        },
+        {
+            "required": true,
+            "file": "Result/UserAgent.php"
+        },
+        {
+            "required": true,
+            "file": "Result/OperatingSystem.php"
+        },
+        {
+            "required": true,
+            "file": "Parser.php"
+        },
+        {
+            "required": true,
+            "file": "regexes.php"
+        }
+    ],
+    "files": [
+        "package.json"
+    ]
+}
